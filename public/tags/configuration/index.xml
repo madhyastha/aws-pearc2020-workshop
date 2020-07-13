@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configuration on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configuration.html</link>
+    <description>Recent content in configuration on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>b. Create your HPC Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html</guid>
+      <description>Now we will configure AWS ParallelCluster with a configuration for including parameters to use Amazon FSx for Lustre. If not already the case, it is recommended that your go through the first AWS ParallelCluster lab before doing that one. If you feel comfortable, feel free to continue.
+Create an Amazon S3 Bucket and Upload Files We will first create an S3 bucket and upload a file so you can retrieve it using Amazon FSx for Lustre.</description>
+    </item>
+    
+  </channel>
+</rss>

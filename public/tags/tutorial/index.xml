@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/tutorial.html</link>
+    <description>Recent content in tutorial on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Install AWS ParallelCluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/01-install-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/01-install-pc.html</guid>
+      <description>You can skip the following step you already have ParallelCluster installed on your AWS Cloud9 instance.
+ To return to the AWS cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, cloud9 from the console search bar. Click on “open IDE” for the cloud9 instance set up previously and wait for the IDE to open. This can take a few moments as AWS Cloud9 will “stop” and “restart” the instance so that the user does not pay compute charges when no longer using the cloud9 IDE.</description>
+    </item>
+    
+    <item>
+      <title>a. Workshop Initial Setup</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/01-requirement.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/01-requirement.html</guid>
+      <description>An initial setup must be conducted by the main account owner. During this setup we will:
+ Create an S3 bucket to store simulations outputs. Define an IAM role for ECS tasks to write the simulations output in that bucket. Build an EC2 role to access the S3 bucket where Nvidia drivers are stored.  The steps described above will be conducted using a CloudFormation script and executed through the commands below.</description>
+    </item>
+    
+    <item>
+      <title>a. Configure AWS ParallelCluster for GATK</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</guid>
+      <description>For this lab we assume that you have an AWS Cloud9 IDE ready and are familiar with AWS ParallelCluster. If this is not the case, please run through the first half of Getting Started with AWS lab.
+ To return to the AWS Cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, Cloud9 from the console search bar. Click on &amp;ldquo;open IDE&amp;rdquo; for the Cloud9 instance set up previously and wait for the IDE to open.</description>
+    </item>
+    
+    <item>
+      <title>a. Install AWS ParallelCluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/02-install-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/02-install-pc.html</guid>
+      <description>For this lab one will assume that you have an AWS Cloud9 IDE ready. If this is not the case, please run through the first half of Getting Started with AWS lab.
+ To return to the AWS Cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, Cloud9 from the console search bar. Click on &amp;ldquo;open IDE&amp;rdquo; for the Cloud9 instance set up previously and wait for the IDE to open.</description>
+    </item>
+    
+    <item>
+      <title>b. Build Your AMI with Packer</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/02-build-ami-packer.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/02-build-ami-packer.html</guid>
+      <description>During this step we will conduct an initial setup for the for the demo. We will first create an AMI and the container then upload this container image to Amazon Elastic Container Registry (ECR) for later use with AWS Batch.
+You will need to execute the following scripts in your terminal. You AWS CLI must be configured and you must have admin access on the account.
+The following script will build an Elastic Container Service (ECS) compatible AMI with CARLA:</description>
+    </item>
+    
+    <item>
+      <title>a. Pre-Requisites</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/02-requirement_notes.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/02-requirement_notes.html</guid>
+      <description>The following requirements will be necessary to follow this guide.
+ A laptop with an internet connection running Microsoft Windows, Mac OS X, or Linux. An Internet browser such as Chrome, Firefox, Safari, Opera or Edge. Familiarity with common Linux commands.  Should you have any question when running this workshop as a group or on your own, do not hesitate to talk to you coordinator or contact us at AWS HPC</description>
+    </item>
+    
+    <item>
+      <title>b. Initialization</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</guid>
+      <description>Next, you will configure AWS ParallelCluster.
+To configure AWS ParallelCluster, you could use the command pcluster configure in a terminal and provide the requested information such as the AWS Region, Scheduler and EC2 Instance Type. However, today we will take a shortcut by creating a basic configuration file, then customizing this file to include HPC specific options.
+The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to ~/.</description>
+    </item>
+    
+    <item>
+      <title>c. File System Examination</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</guid>
+      <description>We will now take a look at our file system, it&#39;s structure and content.
+Let&#39;s take a look at our file system and list all the files present.
+time lfs find /lustre You should see something similar as in the image below.
+Let&#39;s take a deeper dive at our files and see how much they weight by listing the content of the /lustre directory.
+ls -lh /lustre And you should see something like that:</description>
+    </item>
+    
+    <item>
+      <title>c. Repository &amp; Container</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/03-create-docker-repo.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/03-create-docker-repo.html</guid>
+      <description>We will now proceed to create a Docker repository and upload a container image to this repository.
+Create the Docker Repository Use the AWS CLI create a Docker repository on ECR which is AWS&amp;rsquo; managed container registry.
+aws ecr create-repository --repository-name carla-av-demo Fetch and Upload a Docker Image We will fetch the image from the web, then import it to our newly created ECR repository.
+ Fetch the docker credentials  $(aws ecr get-login --no-include-email --region us-east-1) import and tag the image  # get the repository URI ECR_REPOSITORY_URI=$(aws ecr describe-repositories --repository-names carla-av-demo --output text --query &amp;#39;repositories[0].</description>
+    </item>
+    
+    <item>
+      <title>a. Login the AWS Console</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</guid>
+      <description>Depending on conditions in which you are running this guide, you may access the AWS Console through direct sign-in (here) or as directed by your trainer. To log in you will need to enter your AWS Account ID or alias, IAM user name, and Password that as provided to you for this lab.
+After you log in, you will see the main AWS Management Console. Take a few minutes to check it out.</description>
+    </item>
+    
+    <item>
+      <title>c. Create a Cluster Config</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</guid>
+      <description>Now that AWS ParallelCluster is installed and a default configuration has been created, you will create a configuration file to build a simple HPC system. This file will be generated in your home directory.
+Please double check you are using the correct key-pair
+ Configuring Your HPC cluster We will be generating a cluster with the following settings:
+ Head-node and compute nodes will be c4.xlarge instances. Change the instance type if you like but you may run into EC2 limits that may prevent you to create some or too many instances.</description>
+    </item>
+    
+    <item>
+      <title>d. Compute Environments</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/05-setup-batch.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/05-setup-batch.html</guid>
+      <description>In this part we will setup AWS Batch using the AWS Console. The AWS CLI can also be used but we will not discuss that during this workshop.
+The steps will include the setup of a Compute Environment, a Job Queue and a Job Template.
+Access AWS Batch  Go to Batch on your AWS console then Get Started.  You can skip the wizard when on your second screen.  Then proceed to create a Batch Compute Environment.</description>
+    </item>
+    
+    <item>
+      <title>d. Lazy File Loading</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</guid>
+      <description>This section is largely inspired (or shamelessly stolen) the content of the Amazon FSx for Lustre Workshop hosted here. If interested to dive deeper we encourage your to check it out.
+ As seen in the previous section, files content is not retrieved yet on the filesystem. But nothing prevents you to access your files as you would do with any other POSIX compliant file system. When accessing the file the actual content will be retrieved.</description>
+    </item>
+    
+    <item>
+      <title>d. Installing IOR</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/04-install-ior.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/04-install-ior.html</guid>
+      <description>We will now conduct performance tests on our Lustre partition to evaluate the throughput it provides. For that matter, we will be using IOR an IO parallel benchmark tool used to test the performances a parallel filesystem.
+Now we will install IOR. We will use the io500-sc19 branch of the repository on the cluster head-node.
+# get IOR mkdir -p /shared/ior git clone https://github.com/hpc/ior.git cd ior git checkout io500-sc19 # load intelmpi module load intelmpi # install .</description>
+    </item>
+    
+    <item>
+      <title>e. IO Performance Testing</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/05-performance-test.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/05-performance-test.html</guid>
+      <description>We will now run our performance tests with IOR and evaluate how much throughput can be extracted. To measure that we will be tuning several IOR parameters to favor POSIX as an IO access method and conduct direct access to the file system. This will help us to shortcut almost all caching and evaluate the raw performances Amazon FSx for Lustre can offer. Furthermore, we will generate one file per process to saturate the filesystem.</description>
+    </item>
+    
+    <item>
+      <title>c. AWS EC2 Dashboard</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</guid>
+      <description>Next, type EC2 into the search bar, click on EC2, and move to the EC2 Dashboard. While instances are generally launched through scripts, they can also be launched directly from the EC2 dashboard. Spend a few minutes looking at the information on this page.
+Resource listings and the ability to launch an instance are located in the center of the dashboard while tools and features, such as the saved Amazon Machine Images (AMI’s), Storage Volumes, and ssh keys, are accessed from the left hand side.</description>
+    </item>
+    
+    <item>
+      <title>b. Build a GATK Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/03-launch-gatk-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/03-launch-gatk-pc.html</guid>
+      <description>Now we will create a cluster based on the specifications defined in the configuration file. To create a cluster we will use the command pcluster create and the &amp;ndash;config (or -c) option to use another configuration file other than the default one.
+If you were to create your cluster without using the**&amp;ndash;config** (or **-c**) option then AWS ParallelCluster will use the default configuration with the minimum requirements to get a cluster running.</description>
+    </item>
+    
+    <item>
+      <title>d. Build an HPC Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html</guid>
+      <description>Now we will create a cluster based on the specifications defined in the configuration file. To create a cluster we will use the command pcluster create and the &amp;ndash;config (or -c) option to use another configuration file other than the default one.
+If you were to create your cluster without using the**&amp;ndash;config** (or **-c**) option then AWS ParallelCluster will use the default configuration with the minimum requirements to get a cluster running.</description>
+    </item>
+    
+    <item>
+      <title>e. Setup a Job Queue</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/06-setup-batch-job-queue.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/06-setup-batch-job-queue.html</guid>
+      <description>Now we will setup a Job Queue. This is where you will submit your jobs. Those will be dispatched to the Compute Environment(s) of your choosing by order of priority. If you are interested to know more about Job Queues, see here.
+When setting up a Job Queue you will need to do the following:
+ Chose a name for your queue. Define a priority (1-500). This defines the priority of a Job Queue when a Compute environment is shared accross Job Queues (for example a Production Job Queue with a priority of 500 and a R&amp;amp;D Job Queue with a priority of 250).</description>
+    </item>
+    
+    <item>
+      <title>f. Lustre Metrics</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/06-cloudwatch.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/06-cloudwatch.html</guid>
+      <description>Now we will visualize the metrics related to our Amazon FSx for Lustre filesystem using CloudWatch. Metrics can be used to graph several metrics such as the throughput, IOPs, create alarms or display more evolved metrics.
+In the present case we will look at the IOPS and free space on the filesystem as shown in the image below.
+To produce a similar result go through the following steps:
+ On the AWS Console, go to the search field, search and click on Amazon FSx then select File systems (three bars on the left side).</description>
+    </item>
+    
+    <item>
+      <title>d. Access AWS Cloud9</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/05-start_cloud9.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/05-start_cloud9.html</guid>
+      <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. We will be using it to introduce you to the AWS Command Line Interface (CLI) without the need to install any software on your laptop.
+AWS Cloud9 contains a collection of tools that let you code, build, run, test, debug, and release software in the Cloud using your internet browser.</description>
+    </item>
+    
+    <item>
+      <title>c. Log in to Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/04-logon-gatk-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/04-logon-gatk-pc.html</guid>
+      <description>pcluster ssh is a wrapper around SSH. You can also log into your head-node using ssh and the public or private IP address depending on the case.
+ Existing clusters can be listed using the command below. It is a convenient way to find the name of a cluster in case your forget it.
+pcluster list --color Now that your cluster has been created you can log into the head-node using the following command in your AWS Cloud9 terminal:</description>
+    </item>
+    
+    <item>
+      <title>e. Log in to Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html</guid>
+      <description>pcluster ssh is a wrapper around SSH. You can also log into your head-node using ssh and the public or private IP address depending on the case.
+ Existing clusters can be listed using the command below. It is a convenient way to find the name of a cluster in case your forget it.
+pcluster list --color Now that your cluster has been created you can log into the head-node using the following command in your AWS Cloud9 terminal:</description>
+    </item>
+    
+    <item>
+      <title>f. Setup a Job Definition</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/07-setup-batch-job-definition.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/07-setup-batch-job-definition.html</guid>
+      <description>We will now setup a Job Definition, this is a template used for your jobs. While not mandatory it is a good practice to use it in order to version how your jobs are launched. For more information about Job Definitions see this documentation page.
+Job Definition Setup Go the the Job Definition screen and create a new one.
+When defining a job definition, you will need to do the following:</description>
+    </item>
+    
+    <item>
+      <title>g. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</guid>
+      <description>In this lab we learned how to create an Amazon FSx for Lustre partition with AWS ParallelCluster. We studied how lazy loading was working and conducted performances tests on the Lustre partition using IOR. Finally, we looked at the metrics of our Lustre partition using Amazon CloudWatch.
+Please, do not forget to delete your cluster as follows:
+pcluster delete my-fsx-cluster  If you are interested you can dig further on Amazon FSx for Lustre capabilities through its documentation.</description>
+    </item>
+    
+    <item>
+      <title>e. Start with the AWS CLI</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</guid>
+      <description>Your AWS Cloud9 Environment should be ready. We will now get familiar with it, introduce you the AWS CLI then create an Amazon S3 bucket with the AWS CLI. This bucket will be used at the next stage.
+Your AWS Cloud9 IDE The AWS Cloud9 IDE is similar to a traditional IDE you can find on virtually any system. It is composed of a file browser, listing the files located on your instances.</description>
+    </item>
+    
+    <item>
+      <title>d. Submit a GATK Job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/05-run-1stjob.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/05-run-1stjob.html</guid>
+      <description>The steps here can also be executed on any cluster running SLURM. There may be some variations depending on your configuration but that is just to share how generic this procedure is. Except that you are doing it in the cloud.
+ We will be running your first &amp;ldquo;hello world&amp;rdquo; job to introduce your to the mechanisms of AWS ParallelCluster. We will have to go through some preparatory steps before.</description>
+    </item>
+    
+    <item>
+      <title>f. Submit your first HPC job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html</guid>
+      <description>The steps here can also be executed on any cluster running SLURM. There may be some variations depending on your configuration but that is just to share how generic this procedure is. Except that you are doing it in the cloud.
+ We will be running your first &amp;ldquo;hello world&amp;rdquo; job to introduce your to the mechanisms of AWS ParallelCluster. We will have to go through some preparatory steps before.</description>
+    </item>
+    
+    <item>
+      <title>g. Describe Your Environment</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/08-describe-batch-env.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/08-describe-batch-env.html</guid>
+      <description>Now what we configured Batch, let&#39;s take a look at what we have with the following commands
+aws batch describe-compute-environments aws batch describe-job-queues aws batch describe-job-definitions You will see that the JSONs provided as output contain the parameters you filled for the Compute Environment, Job Queue and Job Definition. Please keep in mind that everything we did in the previous step using the AWS Console can also be done with the AWS CLI, AWS SDK or CloudFormation.</description>
+    </item>
+    
+    <item>
+      <title>f. Using Amazon S3</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/07-work-with-s3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/07-work-with-s3.html</guid>
+      <description>Now that we have access to the AWS CLI, we will use it to create an S3 bucket then upload a file to this bucket. While those steps could be done using the AWS Console, they will give you a good idea of what can be done with the AWS CLI. In addition if interested, you can find more details about S3 on the related documentation page.
+Every bucket must have a unique name.</description>
+    </item>
+    
+    <item>
+      <title>g. Behind the Curtain</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html</guid>
+      <description>Let&#39;s now look at what really happens in AWS when you submit a job and reveal a bit of the magic behind your auto-scaling computational resources.
+At the heart of AWS ParallelCluster exists an auto-scaling group. It is a logical group of instances that can scale up and scale down based on a series of criteria. In the case of AWS ParallelCluster we have three processes controlling the scaling of the cluster.</description>
+    </item>
+    
+    <item>
+      <title>g. Run a Single Job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/09-run-job.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/09-run-job.html</guid>
+      <description>On this part we will launch jobs using the AWS CLI. The AWS Console and the AWS SDK can be used as well but we won&#39;t discuss that here. We will run a single job with the AWS CLI as show below. Please replace the Job Queue name and Job Definition with the ones you just created.
+aws batch submit-job --job-name my-job --job-queue YOUR-JOB-QUEUE-NAME --job-definition YOUR-JOB-DEFINITION-NAME  If something goes wrong here you need to double check the queue name and job definition.</description>
+    </item>
+    
+    <item>
+      <title>g. Create an EC2 Instance</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</guid>
+      <description>Now that you are getting familiar with the AWS Console and AWS CLI we will raise the bar and do the following: create an SSH key-pair on you AWS Cloud9 instance, create an instance then access it.
+Generate an SSH Key-pair SSH is commonly used to connect to Amazon EC2 instances. To allow you to connect to your instances we will generate a key-pair using the AWS CLI on your AWS Cloud9 instance as shown below.</description>
+    </item>
+    
+    <item>
+      <title>e. Terminate Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/06-behind-the-curtain.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/06-behind-the-curtain.html</guid>
+      <description>Note: If you plan on working on the next labs then you will want to clean up the ParallelCluster configuration created during that one. Files stored in the bucket and on cloud9 will incur small charges (less than a dollar a month if the tutorial was followed as written.) The cloud9 IDE will stop (not terminate) 30 minutes after the web tab is closed and can be started again, through the console, when needed.</description>
+    </item>
+    
+    <item>
+      <title>h. Terminate Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html</guid>
+      <description>Note: If you plan on working on the next labs then you will want to clean up the ParallelCluster configuration created during that one. Files stored in the bucket and on cloud9 will incur small charges (less than a dollar a month if the tutorial was followed as written.) The cloud9 IDE will stop (not terminate) 30 minutes after the web tab is closed and can be started again, through the console, when needed.</description>
+    </item>
+    
+    <item>
+      <title>i. Run an Array Job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/10-run-array-job.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/10-run-array-job.html</guid>
+      <description>Now we will run an Array Job, it is a way to submit many jobs at once. This time we will create a JSON file that will contain the parameters of the job array.
+First, we create the JSON file by modifying the text below to reflect your environment properties then pasting it to your terminal. As before, please change the Job Queue name and Job Definition Name to reflect the ones you will be using.</description>
+    </item>
+    
+    <item>
+      <title>h. IAM and Roles</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</guid>
+      <description>You will encounter an issue now! But that&#39;s normal and we will explain why.
+ Access to resources by users and services is controlled by Identity and Access Management (IAM). For example, IAM permissions can be added to a policy then a role which can be attached to a user user, group role (admins, devops) or a service (Amazon EC2 to access Amazon S3, Amazon Lambda to access Amazon SQS).</description>
+    </item>
+    
+    <item>
+      <title>j. What do do next?</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</guid>
+      <description>There are many things you could do next such as: generate videos of from the simulations, add lambda functions to do that for you or send you notifications once jobs are processed.
+Generate Videos from Simulations The results of the simulations will be exported in your S3 bucket as zip files, you can fetch them then view the RGB, segmentation and depth images. Go to your S3 bucket directly through the AWS Console or using the following codes.</description>
+    </item>
+    
+    <item>
+      <title>i. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</guid>
+      <description>During this tutorial you have acquired the basic knowledge on how to build an infrastructure in AWS and in particular how to:
+ Access and use the AWS Console. Use the AWS CLI access and create AWS resources. Create an Amazon EC2 instance. Define a new IAM role and attach it to an Amazon EC2 instance.  You will see that building an HPC system in AWS is not much different that what you have done so far.</description>
+    </item>
+    
+  </channel>
+</rss>

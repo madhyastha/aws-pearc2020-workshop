@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HSM on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/hsm.html</link>
+    <description>Recent content in HSM on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/hsm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>c. File System Examination</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</guid>
+      <description>We will now take a look at our file system, it&#39;s structure and content.
+Let&#39;s take a look at our file system and list all the files present.
+time lfs find /lustre You should see something similar as in the image below.
+Let&#39;s take a deeper dive at our files and see how much they weight by listing the content of the /lustre directory.
+ls -lh /lustre And you should see something like that:</description>
+    </item>
+    
+    <item>
+      <title>d. Lazy File Loading</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</guid>
+      <description>This section is largely inspired (or shamelessly stolen) the content of the Amazon FSx for Lustre Workshop hosted here. If interested to dive deeper we encourage your to check it out.
+ As seen in the previous section, files content is not retrieved yet on the filesystem. But nothing prevents you to access your files as you would do with any other POSIX compliant file system. When accessing the file the actual content will be retrieved.</description>
+    </item>
+    
+  </channel>
+</rss>

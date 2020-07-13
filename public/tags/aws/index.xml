@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws.html</link>
+    <description>Recent content in AWS on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Workshop Initial Setup</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/01-requirement.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/01-requirement.html</guid>
+      <description>An initial setup must be conducted by the main account owner. During this setup we will:
+ Create an S3 bucket to store simulations outputs. Define an IAM role for ECS tasks to write the simulations output in that bucket. Build an EC2 role to access the S3 bucket where Nvidia drivers are stored.  The steps described above will be conducted using a CloudFormation script and executed through the commands below.</description>
+    </item>
+    
+    <item>
+      <title>b. Build Your AMI with Packer</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/02-build-ami-packer.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/02-build-ami-packer.html</guid>
+      <description>During this step we will conduct an initial setup for the for the demo. We will first create an AMI and the container then upload this container image to Amazon Elastic Container Registry (ECR) for later use with AWS Batch.
+You will need to execute the following scripts in your terminal. You AWS CLI must be configured and you must have admin access on the account.
+The following script will build an Elastic Container Service (ECS) compatible AMI with CARLA:</description>
+    </item>
+    
+    <item>
+      <title>c. Repository &amp; Container</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/03-create-docker-repo.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/03-create-docker-repo.html</guid>
+      <description>We will now proceed to create a Docker repository and upload a container image to this repository.
+Create the Docker Repository Use the AWS CLI create a Docker repository on ECR which is AWS&amp;rsquo; managed container registry.
+aws ecr create-repository --repository-name carla-av-demo Fetch and Upload a Docker Image We will fetch the image from the web, then import it to our newly created ECR repository.
+ Fetch the docker credentials  $(aws ecr get-login --no-include-email --region us-east-1) import and tag the image  # get the repository URI ECR_REPOSITORY_URI=$(aws ecr describe-repositories --repository-names carla-av-demo --output text --query &amp;#39;repositories[0].</description>
+    </item>
+    
+    <item>
+      <title>d. Compute Environments</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/05-setup-batch.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/05-setup-batch.html</guid>
+      <description>In this part we will setup AWS Batch using the AWS Console. The AWS CLI can also be used but we will not discuss that during this workshop.
+The steps will include the setup of a Compute Environment, a Job Queue and a Job Template.
+Access AWS Batch  Go to Batch on your AWS console then Get Started.  You can skip the wizard when on your second screen.  Then proceed to create a Batch Compute Environment.</description>
+    </item>
+    
+    <item>
+      <title>e. Setup a Job Queue</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/06-setup-batch-job-queue.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/06-setup-batch-job-queue.html</guid>
+      <description>Now we will setup a Job Queue. This is where you will submit your jobs. Those will be dispatched to the Compute Environment(s) of your choosing by order of priority. If you are interested to know more about Job Queues, see here.
+When setting up a Job Queue you will need to do the following:
+ Chose a name for your queue. Define a priority (1-500). This defines the priority of a Job Queue when a Compute environment is shared accross Job Queues (for example a Production Job Queue with a priority of 500 and a R&amp;amp;D Job Queue with a priority of 250).</description>
+    </item>
+    
+    <item>
+      <title>f. Setup a Job Definition</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/07-setup-batch-job-definition.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/07-setup-batch-job-definition.html</guid>
+      <description>We will now setup a Job Definition, this is a template used for your jobs. While not mandatory it is a good practice to use it in order to version how your jobs are launched. For more information about Job Definitions see this documentation page.
+Job Definition Setup Go the the Job Definition screen and create a new one.
+When defining a job definition, you will need to do the following:</description>
+    </item>
+    
+    <item>
+      <title>g. Describe Your Environment</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/08-describe-batch-env.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/08-describe-batch-env.html</guid>
+      <description>Now what we configured Batch, let&#39;s take a look at what we have with the following commands
+aws batch describe-compute-environments aws batch describe-job-queues aws batch describe-job-definitions You will see that the JSONs provided as output contain the parameters you filled for the Compute Environment, Job Queue and Job Definition. Please keep in mind that everything we did in the previous step using the AWS Console can also be done with the AWS CLI, AWS SDK or CloudFormation.</description>
+    </item>
+    
+    <item>
+      <title>g. Run a Single Job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/09-run-job.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/09-run-job.html</guid>
+      <description>On this part we will launch jobs using the AWS CLI. The AWS Console and the AWS SDK can be used as well but we won&#39;t discuss that here. We will run a single job with the AWS CLI as show below. Please replace the Job Queue name and Job Definition with the ones you just created.
+aws batch submit-job --job-name my-job --job-queue YOUR-JOB-QUEUE-NAME --job-definition YOUR-JOB-DEFINITION-NAME  If something goes wrong here you need to double check the queue name and job definition.</description>
+    </item>
+    
+    <item>
+      <title>i. Run an Array Job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/10-run-array-job.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/10-run-array-job.html</guid>
+      <description>Now we will run an Array Job, it is a way to submit many jobs at once. This time we will create a JSON file that will contain the parameters of the job array.
+First, we create the JSON file by modifying the text below to reflect your environment properties then pasting it to your terminal. As before, please change the Job Queue name and Job Definition Name to reflect the ones you will be using.</description>
+    </item>
+    
+    <item>
+      <title>j. What do do next?</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</guid>
+      <description>There are many things you could do next such as: generate videos of from the simulations, add lambda functions to do that for you or send you notifications once jobs are processed.
+Generate Videos from Simulations The results of the simulations will be exported in your S3 bucket as zip files, you can fetch them then view the RGB, segmentation and depth images. Go to your S3 bucket directly through the AWS Console or using the following codes.</description>
+    </item>
+    
+  </channel>
+</rss>

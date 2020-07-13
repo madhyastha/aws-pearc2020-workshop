@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws cli on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-cli.html</link>
+    <description>Recent content in aws cli on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-cli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>e. Start with the AWS CLI</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</guid>
+      <description>Your AWS Cloud9 Environment should be ready. We will now get familiar with it, introduce you the AWS CLI then create an Amazon S3 bucket with the AWS CLI. This bucket will be used at the next stage.
+Your AWS Cloud9 IDE The AWS Cloud9 IDE is similar to a traditional IDE you can find on virtually any system. It is composed of a file browser, listing the files located on your instances.</description>
+    </item>
+    
+    <item>
+      <title>g. Create an EC2 Instance</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</guid>
+      <description>Now that you are getting familiar with the AWS Console and AWS CLI we will raise the bar and do the following: create an SSH key-pair on you AWS Cloud9 instance, create an instance then access it.
+Generate an SSH Key-pair SSH is commonly used to connect to Amazon EC2 instances. To allow you to connect to your instances we will generate a key-pair using the AWS CLI on your AWS Cloud9 instance as shown below.</description>
+    </item>
+    
+    <item>
+      <title>h. IAM and Roles</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</guid>
+      <description>You will encounter an issue now! But that&#39;s normal and we will explain why.
+ Access to resources by users and services is controlled by Identity and Access Management (IAM). For example, IAM permissions can be added to a policy then a role which can be attached to a user user, group role (admins, devops) or a service (Amazon EC2 to access Amazon S3, Amazon Lambda to access Amazon SQS).</description>
+    </item>
+    
+  </channel>
+</rss>

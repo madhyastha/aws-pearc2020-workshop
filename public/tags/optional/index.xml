@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>optional on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/optional.html</link>
+    <description>Recent content in optional on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/optional/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>j. What do do next?</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</guid>
+      <description>There are many things you could do next such as: generate videos of from the simulations, add lambda functions to do that for you or send you notifications once jobs are processed.
+Generate Videos from Simulations The results of the simulations will be exported in your S3 bucket as zip files, you can fetch them then view the RGB, segmentation and depth images. Go to your S3 bucket directly through the AWS Console or using the following codes.</description>
+    </item>
+    
+  </channel>
+</rss>

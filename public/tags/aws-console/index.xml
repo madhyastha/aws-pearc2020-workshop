@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws console on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-console.html</link>
+    <description>Recent content in aws console on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-console/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Login the AWS Console</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</guid>
+      <description>Depending on conditions in which you are running this guide, you may access the AWS Console through direct sign-in (here) or as directed by your trainer. To log in you will need to enter your AWS Account ID or alias, IAM user name, and Password that as provided to you for this lab.
+After you log in, you will see the main AWS Management Console. Take a few minutes to check it out.</description>
+    </item>
+    
+  </channel>
+</rss>

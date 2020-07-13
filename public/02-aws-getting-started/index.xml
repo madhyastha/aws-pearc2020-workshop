@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on the Cloud on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started.html</link>
+    <description>Recent content in Getting Started on the Cloud on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jan 2019 09:05:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Pre-Requisites</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/02-requirement_notes.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/02-requirement_notes.html</guid>
+      <description>The following requirements will be necessary to follow this guide.
+ A laptop with an internet connection running Microsoft Windows, Mac OS X, or Linux. An Internet browser such as Chrome, Firefox, Safari, Opera or Edge. Familiarity with common Linux commands.  Should you have any question when running this workshop as a group or on your own, do not hesitate to talk to you coordinator or contact us at AWS HPC</description>
+    </item>
+    
+    <item>
+      <title>a. Login the AWS Console</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</guid>
+      <description>Depending on conditions in which you are running this guide, you may access the AWS Console through direct sign-in (here) or as directed by your trainer. To log in you will need to enter your AWS Account ID or alias, IAM user name, and Password that as provided to you for this lab.
+After you log in, you will see the main AWS Management Console. Take a few minutes to check it out.</description>
+    </item>
+    
+    <item>
+      <title>c. AWS EC2 Dashboard</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</guid>
+      <description>Next, type EC2 into the search bar, click on EC2, and move to the EC2 Dashboard. While instances are generally launched through scripts, they can also be launched directly from the EC2 dashboard. Spend a few minutes looking at the information on this page.
+Resource listings and the ability to launch an instance are located in the center of the dashboard while tools and features, such as the saved Amazon Machine Images (AMI’s), Storage Volumes, and ssh keys, are accessed from the left hand side.</description>
+    </item>
+    
+    <item>
+      <title>d. Access AWS Cloud9</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/05-start_cloud9.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/05-start_cloud9.html</guid>
+      <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. We will be using it to introduce you to the AWS Command Line Interface (CLI) without the need to install any software on your laptop.
+AWS Cloud9 contains a collection of tools that let you code, build, run, test, debug, and release software in the Cloud using your internet browser.</description>
+    </item>
+    
+    <item>
+      <title>e. Start with the AWS CLI</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</guid>
+      <description>Your AWS Cloud9 Environment should be ready. We will now get familiar with it, introduce you the AWS CLI then create an Amazon S3 bucket with the AWS CLI. This bucket will be used at the next stage.
+Your AWS Cloud9 IDE The AWS Cloud9 IDE is similar to a traditional IDE you can find on virtually any system. It is composed of a file browser, listing the files located on your instances.</description>
+    </item>
+    
+    <item>
+      <title>f. Using Amazon S3</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/07-work-with-s3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/07-work-with-s3.html</guid>
+      <description>Now that we have access to the AWS CLI, we will use it to create an S3 bucket then upload a file to this bucket. While those steps could be done using the AWS Console, they will give you a good idea of what can be done with the AWS CLI. In addition if interested, you can find more details about S3 on the related documentation page.
+Every bucket must have a unique name.</description>
+    </item>
+    
+    <item>
+      <title>g. Create an EC2 Instance</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</guid>
+      <description>Now that you are getting familiar with the AWS Console and AWS CLI we will raise the bar and do the following: create an SSH key-pair on you AWS Cloud9 instance, create an instance then access it.
+Generate an SSH Key-pair SSH is commonly used to connect to Amazon EC2 instances. To allow you to connect to your instances we will generate a key-pair using the AWS CLI on your AWS Cloud9 instance as shown below.</description>
+    </item>
+    
+    <item>
+      <title>h. IAM and Roles</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</guid>
+      <description>You will encounter an issue now! But that&#39;s normal and we will explain why.
+ Access to resources by users and services is controlled by Identity and Access Management (IAM). For example, IAM permissions can be added to a policy then a role which can be attached to a user user, group role (admins, devops) or a service (Amazon EC2 to access Amazon S3, Amazon Lambda to access Amazon SQS).</description>
+    </item>
+    
+    <item>
+      <title>i. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</guid>
+      <description>During this tutorial you have acquired the basic knowledge on how to build an infrastructure in AWS and in particular how to:
+ Access and use the AWS Console. Use the AWS CLI access and create AWS resources. Create an Amazon EC2 instance. Define a new IAM role and attach it to an Amazon EC2 instance.  You will see that building an HPC system in AWS is not much different that what you have done so far.</description>
+    </item>
+    
+  </channel>
+</rss>

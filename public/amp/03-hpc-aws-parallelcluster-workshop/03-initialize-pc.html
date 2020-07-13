@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="EC2 Spot Workshops" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ec2spotworkshops.com/" />
+    <meta property="og:image" content="https://ec2spotworkshops.com/images/spotlogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="description" content="AWS HPC Workshops">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>b. Initialization :: AWS HPC Workshops</title>
+
+    
+    <link href="/css/nucleus.css?1580334071" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="/css/hybrid.css?1580334071" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1580334071" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1580334071" rel="stylesheet">
+    <link href="/css/auto-complete.css?1580334071" rel="stylesheet">
+    <link href="/css/theme.css?1580334071" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1580334071" rel="stylesheet">
+    
+      <link href="/css/theme-mine.css?1580334071" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1580334071"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/amp/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="60%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1580334071"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1580334071"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/master.d2fvrafk9v089j.amplifyapp.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1580334071"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/01-hpc-overview.html" title="AWS HPC Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-hpc-overview.html">
+          <b>I ⁃ </b>AWS HPC Overview
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/02-aws-getting-started.html" title="Getting Started on the Cloud" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02-aws-getting-started.html">
+          <b>II ⁃ </b>Getting Started on the Cloud
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/02-requirement_notes.html" title="a. Pre-Requisites" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/02-requirement_notes.html">
+        a. Pre-Requisites
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/03-aws-console-login.html" title="a. Login the AWS Console" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/03-aws-console-login.html">
+        a. Login the AWS Console
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/04-aws-ec2-dashboard.html" title="c. AWS EC2 Dashboard" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/04-aws-ec2-dashboard.html">
+        c. AWS EC2 Dashboard
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/05-start_cloud9.html" title="d. Access AWS Cloud9" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/05-start_cloud9.html">
+        d. Access AWS Cloud9
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/06-start-aws-cli.html" title="e. Start with the AWS CLI" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/06-start-aws-cli.html">
+        e. Start with the AWS CLI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/07-work-with-s3.html" title="f. Using Amazon S3" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/07-work-with-s3.html">
+        f. Using Amazon S3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/08-start-ec2.html" title="g. Create an EC2 Instance" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/08-start-ec2.html">
+        g. Create an EC2 Instance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/09-ec2-s3-iam.html" title="h. IAM and Roles" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/09-ec2-s3-iam.html">
+        h. IAM and Roles
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/02-aws-getting-started/99-summary.html" title="i. Summary" class="dd-item ">
+        <a href="/amp/02-aws-getting-started/99-summary.html">
+        i. Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/03-hpc-aws-parallelcluster-workshop.html" title="AWS ParallelCluster" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/03-hpc-aws-parallelcluster-workshop.html">
+          <b>III ⁃ </b>AWS ParallelCluster
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/02-install-pc.html" title="a. Install AWS ParallelCluster" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/02-install-pc.html">
+        a. Install AWS ParallelCluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html" title="b. Initialization" class="dd-item active">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html">
+        b. Initialization
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html" title="c. Create a Cluster Config" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html">
+        c. Create a Cluster Config
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html" title="d. Build an HPC Cluster" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html">
+        d. Build an HPC Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html" title="e. Log in to Your Cluster" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html">
+        e. Log in to Your Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html" title="f. Submit your first HPC job" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html">
+        f. Submit your first HPC job
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html" title="g. Behind the Curtain" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html">
+        g. Behind the Curtain
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html" title="h. Terminate Your Cluster" class="dd-item ">
+        <a href="/amp/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html">
+        h. Terminate Your Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/06-running-gatk-on-aws-parallelcluster.html" title="Running GATK on AWS ParallelCluster" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/06-running-gatk-on-aws-parallelcluster.html">
+          <b>VI ⁃ </b>Running GATK on AWS ParallelCluster
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html" title="a. Configure AWS ParallelCluster for GATK" class="dd-item ">
+        <a href="/amp/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html">
+        a. Configure AWS ParallelCluster for GATK
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/06-running-gatk-on-aws-parallelcluster/03-launch-gatk-pc.html" title="b. Build a GATK Cluster" class="dd-item ">
+        <a href="/amp/06-running-gatk-on-aws-parallelcluster/03-launch-gatk-pc.html">
+        b. Build a GATK Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/06-running-gatk-on-aws-parallelcluster/04-logon-gatk-pc.html" title="c. Log in to Your Cluster" class="dd-item ">
+        <a href="/amp/06-running-gatk-on-aws-parallelcluster/04-logon-gatk-pc.html">
+        c. Log in to Your Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/06-running-gatk-on-aws-parallelcluster/05-run-1stjob.html" title="d. Submit a GATK Job" class="dd-item ">
+        <a href="/amp/06-running-gatk-on-aws-parallelcluster/05-run-1stjob.html">
+        d. Submit a GATK Job
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/06-running-gatk-on-aws-parallelcluster/06-behind-the-curtain.html" title="e. Terminate Your Cluster" class="dd-item ">
+        <a href="/amp/06-running-gatk-on-aws-parallelcluster/06-behind-the-curtain.html">
+        e. Terminate Your Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/04-amazon-fsx-for-lustre.html" title="Amazon FSx for Lustre" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-amazon-fsx-for-lustre.html">
+          <b>IV ⁃ </b>Amazon FSx for Lustre
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/01-install-pc.html" title="a. Install AWS ParallelCluster" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/01-install-pc.html">
+        a. Install AWS ParallelCluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html" title="b. Create your HPC Cluster" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html">
+        b. Create your HPC Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/03-check-fs.html" title="c. File System Examination" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/03-check-fs.html">
+        c. File System Examination
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/03-lazy-loading.html" title="d. Lazy File Loading" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/03-lazy-loading.html">
+        d. Lazy File Loading
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/04-install-ior.html" title="d. Installing IOR" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/04-install-ior.html">
+        d. Installing IOR
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/05-performance-test.html" title="e. IO Performance Testing" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/05-performance-test.html">
+        e. IO Performance Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/06-cloudwatch.html" title="f. Lustre Metrics" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/06-cloudwatch.html">
+        f. Lustre Metrics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/04-amazon-fsx-for-lustre/07-summary.html" title="g. Summary" class="dd-item ">
+        <a href="/amp/04-amazon-fsx-for-lustre/07-summary.html">
+        g. Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/05-aws-batch.html" title="AWS Batch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05-aws-batch.html">
+          <b>IV ⁃ </b>AWS Batch
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/01-requirement.html" title="a. Workshop Initial Setup" class="dd-item ">
+        <a href="/amp/05-aws-batch/01-requirement.html">
+        a. Workshop Initial Setup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/02-build-ami-packer.html" title="b. Build Your AMI with Packer" class="dd-item ">
+        <a href="/amp/05-aws-batch/02-build-ami-packer.html">
+        b. Build Your AMI with Packer
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/03-create-docker-repo.html" title="c. Repository &amp; Container" class="dd-item ">
+        <a href="/amp/05-aws-batch/03-create-docker-repo.html">
+        c. Repository &amp; Container
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/05-setup-batch.html" title="d. Compute Environments" class="dd-item ">
+        <a href="/amp/05-aws-batch/05-setup-batch.html">
+        d. Compute Environments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/06-setup-batch-job-queue.html" title="e. Setup a Job Queue" class="dd-item ">
+        <a href="/amp/05-aws-batch/06-setup-batch-job-queue.html">
+        e. Setup a Job Queue
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/07-setup-batch-job-definition.html" title="f. Setup a Job Definition" class="dd-item ">
+        <a href="/amp/05-aws-batch/07-setup-batch-job-definition.html">
+        f. Setup a Job Definition
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/08-describe-batch-env.html" title="g. Describe Your Environment" class="dd-item ">
+        <a href="/amp/05-aws-batch/08-describe-batch-env.html">
+        g. Describe Your Environment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/09-run-job.html" title="g. Run a Single Job" class="dd-item ">
+        <a href="/amp/05-aws-batch/09-run-job.html">
+        g. Run a Single Job
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/10-run-array-job.html" title="i. Run an Array Job" class="dd-item ">
+        <a href="/amp/05-aws-batch/10-run-array-job.html">
+        i. Run an Array Job
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/05-aws-batch/11-optional.html" title="j. What do do next?" class="dd-item ">
+        <a href="/amp/05-aws-batch/11-optional.html">
+        j. What do do next?
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://aws.amazon.com/hpc/"><i class='fas fa-bookmark'></i> AWS - HPC</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://master.d2fvrafk9v089j.amplifyapp.com/authors.html"><i class='fas fa-users'></i> Authors</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="mailto:aws-hpc-workshop@amazon.com"><i class='fas fa-envelope'></i> Feedback / Questions?</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://master.d2fvrafk9v089j.amplifyapp.com/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+        <h5 class="copyright">&copy; 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-148357634-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/amp/'>AWS HPC Workshops</a> > <a href='/03-hpc-aws-parallelcluster-workshop.html'>AWS ParallelCluster</a> > b. Initialization
+          
+        
+          
+        
+          
+        
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>b. Initialization</h1>
+          
+
+        
+
+
+<p>Next, you will configure AWS ParallelCluster.</p>
+<p>To configure AWS ParallelCluster, you could use the command <a href="https://docs.aws.amazon.com/parallelcluster/latest/ug/getting-started-configuring-parallelcluster.html"><strong>pcluster configure</strong></a> in a terminal and provide the requested information such as the AWS Region, Scheduler and EC2 Instance Type. <strong>However, today we will take a shortcut by creating a basic configuration file, then customizing this file to include HPC specific options.</strong></p>
+<p>The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to <code>~/.parallelcluster/config</code>. You can always edit this config file to add and change <a href="https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration.html">configuration options</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># generate a new key-pair</span>
+aws ec2 create-key-pair --key-name lab-3-your-key --query KeyMaterial --output text &gt; ~/.ssh/lab-3-key
+chmod <span style="color:#ae81ff">600</span> ~/.ssh/lab-3-key
+
+IFACE<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/<span style="color:#66d9ef">)</span>
+SUBNET_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/<span style="color:#e6db74">${</span>IFACE<span style="color:#e6db74">}</span>/subnet-id<span style="color:#66d9ef">)</span>
+VPC_ID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/<span style="color:#e6db74">${</span>IFACE<span style="color:#e6db74">}</span>/vpc-id<span style="color:#66d9ef">)</span>
+
+mkdir -p ~/.parallelcluster
+cat &gt; ~/.parallelcluster/config <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">[aws]
+</span><span style="color:#e6db74">aws_region_name = us-east-1
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[cluster default]
+</span><span style="color:#e6db74">key_name = lab-3-your-key
+</span><span style="color:#e6db74">vpc_settings = public
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[vpc public]
+</span><span style="color:#e6db74">vpc_id = ${VPC_ID}
+</span><span style="color:#e6db74">master_subnet_id = ${SUBNET_ID}
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[global]
+</span><span style="color:#e6db74">cluster_template = default
+</span><span style="color:#e6db74">update_check = false
+</span><span style="color:#e6db74">sanity_check = true
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">[aliases]
+</span><span style="color:#e6db74">ssh = ssh {CFN_USER}@{MASTER_IP} {ARGS}
+</span><span style="color:#e6db74">EOF</span>
+</code></pre></div><p>Now check the content of this file using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat ~/.parallelcluster/config
+</code></pre></div><p>You now have a configuration file allowing you to create a simple cluster with the minimum required information. A default configuration file is good to have for testing purposes. Next, we build a configuration to generate an optimized cluster to run typical &ldquo;tightly coupled&rdquo; HPC applications.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/amp/03-hpc-aws-parallelcluster-workshop/02-install-pc.html" title="a. Install AWS ParallelCluster"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/amp/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html" title="c. Create a Cluster Config" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1580334071"></script>
+    <script src="/js/perfect-scrollbar.min.js?1580334071"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1580334071"></script>
+    <script src="/js/jquery.sticky.js?1580334071"></script>
+    <script src="/js/featherlight.min.js?1580334071"></script>
+    <script src="/js/highlight.pack.js?1580334071"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1580334071"></script>
+    <script src="/js/learn.js?1580334071"></script>
+    <script src="/js/hugo-learn.js?1580334071"></script>
+
+    <link href="/mermaid/mermaid.css?1580334071" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1580334071"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-148357634-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+</html>
+

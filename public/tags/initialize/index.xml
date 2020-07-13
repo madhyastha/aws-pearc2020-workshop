@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>initialize on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/initialize.html</link>
+    <description>Recent content in initialize on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/initialize/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Configure AWS ParallelCluster for GATK</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</guid>
+      <description>For this lab we assume that you have an AWS Cloud9 IDE ready and are familiar with AWS ParallelCluster. If this is not the case, please run through the first half of Getting Started with AWS lab.
+ To return to the AWS Cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, Cloud9 from the console search bar. Click on &amp;ldquo;open IDE&amp;rdquo; for the Cloud9 instance set up previously and wait for the IDE to open.</description>
+    </item>
+    
+    <item>
+      <title>b. Initialization</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</guid>
+      <description>Next, you will configure AWS ParallelCluster.
+To configure AWS ParallelCluster, you could use the command pcluster configure in a terminal and provide the requested information such as the AWS Region, Scheduler and EC2 Instance Type. However, today we will take a shortcut by creating a basic configuration file, then customizing this file to include HPC specific options.
+The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to ~/.</description>
+    </item>
+    
+    <item>
+      <title>c. Create a Cluster Config</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</guid>
+      <description>Now that AWS ParallelCluster is installed and a default configuration has been created, you will create a configuration file to build a simple HPC system. This file will be generated in your home directory.
+Please double check you are using the correct key-pair
+ Configuring Your HPC cluster We will be generating a cluster with the following settings:
+ Head-node and compute nodes will be c4.xlarge instances. Change the instance type if you like but you may run into EC2 limits that may prevent you to create some or too many instances.</description>
+    </item>
+    
+  </channel>
+</rss>

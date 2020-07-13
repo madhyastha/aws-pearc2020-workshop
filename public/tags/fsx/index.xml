@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FSx on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/fsx.html</link>
+    <description>Recent content in FSx on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/fsx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>b. Create your HPC Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html</guid>
+      <description>Now we will configure AWS ParallelCluster with a configuration for including parameters to use Amazon FSx for Lustre. If not already the case, it is recommended that your go through the first AWS ParallelCluster lab before doing that one. If you feel comfortable, feel free to continue.
+Create an Amazon S3 Bucket and Upload Files We will first create an S3 bucket and upload a file so you can retrieve it using Amazon FSx for Lustre.</description>
+    </item>
+    
+    <item>
+      <title>c. File System Examination</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</guid>
+      <description>We will now take a look at our file system, it&#39;s structure and content.
+Let&#39;s take a look at our file system and list all the files present.
+time lfs find /lustre You should see something similar as in the image below.
+Let&#39;s take a deeper dive at our files and see how much they weight by listing the content of the /lustre directory.
+ls -lh /lustre And you should see something like that:</description>
+    </item>
+    
+    <item>
+      <title>d. Lazy File Loading</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</guid>
+      <description>This section is largely inspired (or shamelessly stolen) the content of the Amazon FSx for Lustre Workshop hosted here. If interested to dive deeper we encourage your to check it out.
+ As seen in the previous section, files content is not retrieved yet on the filesystem. But nothing prevents you to access your files as you would do with any other POSIX compliant file system. When accessing the file the actual content will be retrieved.</description>
+    </item>
+    
+    <item>
+      <title>d. Installing IOR</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/04-install-ior.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/04-install-ior.html</guid>
+      <description>We will now conduct performance tests on our Lustre partition to evaluate the throughput it provides. For that matter, we will be using IOR an IO parallel benchmark tool used to test the performances a parallel filesystem.
+Now we will install IOR. We will use the io500-sc19 branch of the repository on the cluster head-node.
+# get IOR mkdir -p /shared/ior git clone https://github.com/hpc/ior.git cd ior git checkout io500-sc19 # load intelmpi module load intelmpi # install .</description>
+    </item>
+    
+    <item>
+      <title>e. IO Performance Testing</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/05-performance-test.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/05-performance-test.html</guid>
+      <description>We will now run our performance tests with IOR and evaluate how much throughput can be extracted. To measure that we will be tuning several IOR parameters to favor POSIX as an IO access method and conduct direct access to the file system. This will help us to shortcut almost all caching and evaluate the raw performances Amazon FSx for Lustre can offer. Furthermore, we will generate one file per process to saturate the filesystem.</description>
+    </item>
+    
+    <item>
+      <title>f. Lustre Metrics</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/06-cloudwatch.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/06-cloudwatch.html</guid>
+      <description>Now we will visualize the metrics related to our Amazon FSx for Lustre filesystem using CloudWatch. Metrics can be used to graph several metrics such as the throughput, IOPs, create alarms or display more evolved metrics.
+In the present case we will look at the IOPS and free space on the filesystem as shown in the image below.
+To produce a similar result go through the following steps:
+ On the AWS Console, go to the search field, search and click on Amazon FSx then select File systems (three bars on the left side).</description>
+    </item>
+    
+    <item>
+      <title>g. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</guid>
+      <description>In this lab we learned how to create an Amazon FSx for Lustre partition with AWS ParallelCluster. We studied how lazy loading was working and conducted performances tests on the Lustre partition using IOR. Finally, we looked at the metrics of our Lustre partition using Amazon CloudWatch.
+Please, do not forget to delete your cluster as follows:
+pcluster delete my-fsx-cluster  If you are interested you can dig further on Amazon FSx for Lustre capabilities through its documentation.</description>
+    </item>
+    
+  </channel>
+</rss>

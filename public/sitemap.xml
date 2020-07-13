@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/01-hpc-overview.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/01-install-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/01-requirement.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/02-install-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/02-build-ami-packer.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/02-configure-pc-fsx.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/02-requirement_notes.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-check-fs.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/03-create-docker-repo.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/03-aws-console-login.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/05-setup-batch.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/03-lazy-loading.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/04-install-ior.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/05-performance-test.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/03-launch-gatk-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/06-setup-batch-job-queue.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/06-cloudwatch.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/05-start_cloud9.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/04-logon-gatk-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/07-setup-batch-job-definition.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/06-start-aws-cli.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/05-run-1stjob.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/08-describe-batch-env.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/07-work-with-s3.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/09-run-job.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/08-start-ec2.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/06-behind-the-curtain.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/10-run-array-job.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/09-ec2-s3-iam.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch/11-optional.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/05-aws-batch.html</loc>
+    <lastmod>2019-01-24T09:05:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/</loc>
+    <lastmod>2019-09-18T10:50:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-console.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/batch.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configuration.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configure.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/create.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ec2.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/fsx.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/hsm.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/initialize.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/install.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ior.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/laxy-load.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/metrics.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/optional.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/packer.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/parallelcluster.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/performances.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/pre-requisite.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/summary.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/tutorial.html</loc>
+    <lastmod>2019-09-18T10:46:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/authors.html</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-cli.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/cloud9.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/authors.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/dashboard.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/iam.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://master.d2fvrafk9v089j.amplifyapp.com/tags/s3.html</loc>
+  </url>
+  
+</urlset>

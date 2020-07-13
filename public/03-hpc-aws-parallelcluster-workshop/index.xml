@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS ParallelCluster on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop.html</link>
+    <description>Recent content in AWS ParallelCluster on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jan 2019 09:05:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Install AWS ParallelCluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/02-install-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/02-install-pc.html</guid>
+      <description>For this lab one will assume that you have an AWS Cloud9 IDE ready. If this is not the case, please run through the first half of Getting Started with AWS lab.
+ To return to the AWS Cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, Cloud9 from the console search bar. Click on &amp;ldquo;open IDE&amp;rdquo; for the Cloud9 instance set up previously and wait for the IDE to open.</description>
+    </item>
+    
+    <item>
+      <title>b. Initialization</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/03-initialize-pc.html</guid>
+      <description>Next, you will configure AWS ParallelCluster.
+To configure AWS ParallelCluster, you could use the command pcluster configure in a terminal and provide the requested information such as the AWS Region, Scheduler and EC2 Instance Type. However, today we will take a shortcut by creating a basic configuration file, then customizing this file to include HPC specific options.
+The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to ~/.</description>
+    </item>
+    
+    <item>
+      <title>c. Create a Cluster Config</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html</guid>
+      <description>Now that AWS ParallelCluster is installed and a default configuration has been created, you will create a configuration file to build a simple HPC system. This file will be generated in your home directory.
+Please double check you are using the correct key-pair
+ Configuring Your HPC cluster We will be generating a cluster with the following settings:
+ Head-node and compute nodes will be c4.xlarge instances. Change the instance type if you like but you may run into EC2 limits that may prevent you to create some or too many instances.</description>
+    </item>
+    
+    <item>
+      <title>d. Build an HPC Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/06-launch-pc.html</guid>
+      <description>Now we will create a cluster based on the specifications defined in the configuration file. To create a cluster we will use the command pcluster create and the &amp;ndash;config (or -c) option to use another configuration file other than the default one.
+If you were to create your cluster without using the**&amp;ndash;config** (or **-c**) option then AWS ParallelCluster will use the default configuration with the minimum requirements to get a cluster running.</description>
+    </item>
+    
+    <item>
+      <title>e. Log in to Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/07-logon-pc.html</guid>
+      <description>pcluster ssh is a wrapper around SSH. You can also log into your head-node using ssh and the public or private IP address depending on the case.
+ Existing clusters can be listed using the command below. It is a convenient way to find the name of a cluster in case your forget it.
+pcluster list --color Now that your cluster has been created you can log into the head-node using the following command in your AWS Cloud9 terminal:</description>
+    </item>
+    
+    <item>
+      <title>f. Submit your first HPC job</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/08-run-1stjob.html</guid>
+      <description>The steps here can also be executed on any cluster running SLURM. There may be some variations depending on your configuration but that is just to share how generic this procedure is. Except that you are doing it in the cloud.
+ We will be running your first &amp;ldquo;hello world&amp;rdquo; job to introduce your to the mechanisms of AWS ParallelCluster. We will have to go through some preparatory steps before.</description>
+    </item>
+    
+    <item>
+      <title>g. Behind the Curtain</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/09-behind-the-curtain.html</guid>
+      <description>Let&#39;s now look at what really happens in AWS when you submit a job and reveal a bit of the magic behind your auto-scaling computational resources.
+At the heart of AWS ParallelCluster exists an auto-scaling group. It is a logical group of instances that can scale up and scale down based on a series of criteria. In the case of AWS ParallelCluster we have three processes controlling the scaling of the cluster.</description>
+    </item>
+    
+    <item>
+      <title>h. Terminate Your Cluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/03-hpc-aws-parallelcluster-workshop/10-delete-pc.html</guid>
+      <description>Note: If you plan on working on the next labs then you will want to clean up the ParallelCluster configuration created during that one. Files stored in the bucket and on cloud9 will incur small charges (less than a dollar a month if the tutorial was followed as written.) The cloud9 IDE will stop (not terminate) 30 minutes after the web tab is closed and can be started again, through the console, when needed.</description>
+    </item>
+    
+  </channel>
+</rss>

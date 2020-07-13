@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>summary on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/summary.html</link>
+    <description>Recent content in summary on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/summary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>g. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/04-amazon-fsx-for-lustre/07-summary.html</guid>
+      <description>In this lab we learned how to create an Amazon FSx for Lustre partition with AWS ParallelCluster. We studied how lazy loading was working and conducted performances tests on the Lustre partition using IOR. Finally, we looked at the metrics of our Lustre partition using Amazon CloudWatch.
+Please, do not forget to delete your cluster as follows:
+pcluster delete my-fsx-cluster  If you are interested you can dig further on Amazon FSx for Lustre capabilities through its documentation.</description>
+    </item>
+    
+    <item>
+      <title>i. Summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/99-summary.html</guid>
+      <description>During this tutorial you have acquired the basic knowledge on how to build an infrastructure in AWS and in particular how to:
+ Access and use the AWS Console. Use the AWS CLI access and create AWS resources. Create an Amazon EC2 instance. Define a new IAM role and attach it to an Amazon EC2 instance.  You will see that building an HPC system in AWS is not much different that what you have done so far.</description>
+    </item>
+    
+  </channel>
+</rss>

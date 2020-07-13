@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dashboard on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/dashboard.html</link>
+    <description>Recent content in dashboard on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/dashboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>c. AWS EC2 Dashboard</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/02-aws-getting-started/04-aws-ec2-dashboard.html</guid>
+      <description>Next, type EC2 into the search bar, click on EC2, and move to the EC2 Dashboard. While instances are generally launched through scripts, they can also be launched directly from the EC2 dashboard. Spend a few minutes looking at the information on this page.
+Resource listings and the ability to launch an instance are located in the center of the dashboard while tools and features, such as the saved Amazon Machine Images (AMI’s), Storage Volumes, and ssh keys, are accessed from the left hand side.</description>
+    </item>
+    
+  </channel>
+</rss>

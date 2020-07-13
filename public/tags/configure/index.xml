@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configure on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configure.html</link>
+    <description>Recent content in configure on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/configure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a. Configure AWS ParallelCluster for GATK</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/06-running-gatk-on-aws-parallelcluster/02-configure-gatk-pc.html</guid>
+      <description>For this lab we assume that you have an AWS Cloud9 IDE ready and are familiar with AWS ParallelCluster. If this is not the case, please run through the first half of Getting Started with AWS lab.
+ To return to the AWS Cloud9 instance, click on the AWS logo in the upper left corner. Search for, and select, Cloud9 from the console search bar. Click on &amp;ldquo;open IDE&amp;rdquo; for the Cloud9 instance set up previously and wait for the IDE to open.</description>
+    </item>
+    
+  </channel>
+</rss>

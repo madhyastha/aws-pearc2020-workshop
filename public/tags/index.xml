@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on AWS HPC Workshops</title>
+    <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags.html</link>
+    <description>Recent content in Tags on AWS HPC Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2019 10:46:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://master.d2fvrafk9v089j.amplifyapp.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws console</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-console.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-console.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Batch</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/batch.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/batch.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configuration.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configuration.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configure</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configure.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/configure.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/create.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/create.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ec2</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ec2.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ec2.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FSx</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/fsx.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/fsx.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HSM</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/hsm.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/hsm.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>initialize</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/initialize.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/initialize.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>install</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/install.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/install.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IOR</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ior.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/ior.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laxy Load</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/laxy-load.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/laxy-load.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metrics</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/metrics.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/metrics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optional</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/optional.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/optional.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packer</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/packer.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/packer.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ParallelCluster</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/parallelcluster.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/parallelcluster.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performances</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/performances.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/performances.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pre-Requisite</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/pre-requisite.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/pre-requisite.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>summary</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/summary.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/summary.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/tutorial.html</link>
+      <pubDate>Wed, 18 Sep 2019 10:46:30 -0400</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/tutorial.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws cli</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-cli.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/aws-cli.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud9</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/cloud9.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/cloud9.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboard</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/dashboard.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iam</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/iam.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/iam.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s3</title>
+      <link>https://master.d2fvrafk9v089j.amplifyapp.com/tags/s3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://master.d2fvrafk9v089j.amplifyapp.com/tags/s3.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
