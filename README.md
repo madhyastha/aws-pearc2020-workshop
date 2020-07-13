@@ -1,9 +1,8 @@
-## AWS HPC Workshop
+## AWS PEARC 2020 Tutorial
 
 
-Collection of workshops to demonstrate best practices in using Amazon HPC components. https://aws.amazon.com/hpc/
+Tutorial content for PEARC 2020 Best Practices on Research Computing.
 
-Website for this workshops is available at https://awshpcworkshop.com
 
 ## Building the Workshop site
 
