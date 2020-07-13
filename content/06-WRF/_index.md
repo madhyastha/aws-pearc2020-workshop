@@ -2,7 +2,7 @@
 title: "Running WRF"
 date: 2019-01-24T09:05:54Z
 weight: 300
-pre: "<b>VI ⁃ </b>"
+pre: "<b>IV ⁃ </b>"
 tags: ["WRF", "Overview"]
 ---
 

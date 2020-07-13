@@ -1,0 +1,12 @@
+---
+title: "Nextflow and Genomics Workflows"
+date: 2019-01-24T09:05:54Z
+weight: 300
+pre: "<b>VI ⁃ </b>"
+tags: ["Nextflow", "Overview"]
+---
+
+We have discussed how to create traditional HPC clusters. However,
+containers are becoming a popular way to run reproducible
+workflows. This lab describes how to use Nextflow, an open source
+workflow tool, to run a genomics workflow.
