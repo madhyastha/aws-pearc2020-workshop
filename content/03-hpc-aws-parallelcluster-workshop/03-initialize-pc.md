@@ -13,8 +13,8 @@ To configure AWS ParallelCluster, you could use the command [**pcluster configur
 The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to `~/.parallelcluster/config`. You can always edit this config file to add and change [configuration options](https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration.html).
 
 ```bash
-# generate a new key-pair
-aws ec2 create-key-pair --key-name lab-3-your-key --query KeyMaterial --output text > ~/.ssh/lab-3-key
+# generate a new key-pair if it doesn't already exist
+[ -f ~/.ssh/lab-3-key ] || aws ec2 create-key-pair --key-name lab-3-your-key --query KeyMaterial --output text > ~/.ssh/lab-3-key
 chmod 600 ~/.ssh/lab-3-key
 
 IFACE=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/)
