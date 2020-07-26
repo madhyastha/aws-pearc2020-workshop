@@ -5,7 +5,15 @@ weight = 70
 tags = ["tutorial", "create", "ParallelCluster"]
 +++
 
-Brave soul, one day you may have to start from scratch, install some compilers on a cluster, import the source code and any dependencies, and compile it all.  This can be a lot of work, so it’s best to save the results for the next time you start a new cluster.  First ask yourself, are you the kind of person who will have to install applications for yourself or others?  Or will someone else do it for you?  If the latter, well done; go have a nice cup of coffee while the cluster is created.  If the former, here are various ideas, and you can reflect on what would work best for you:
+Brave soul, one day you may have to start from scratch, install some
+compilers on a cluster, import the source code and any dependencies,
+and compile it all.  This can be a lot of work, so it’s best to save
+the results for the next time you start a new cluster.  First ask
+yourself, are you the kind of person who will have to install
+applications for yourself or others?  Or will someone else do it for
+you?  If the latter, well done; go have a nice cup of coffee while the
+cluster is created.  If the former, here are various ideas, and you
+can reflect on what would work best for you:
 
 -	Pack your applications and dependencies in a disk image (“EBS snapshot” in AWS parlance) and save that in your AWS account.  Use that disk image to create a shared disk volume for your next cluster.  You can version disk images, share them with other AWS accounts, and store them indefinitely (e.g. with all the work pertaining to a paper you published).
 -	Make a tarball containing everything you need, and store this in Amazon S3.  Again you can version, archive, and share.  When you create a new cluster, you can write a postinstall script that pulls the tarball from S3, copies it to the cluster, and unpacks it.  (Why the tarball?  S3 is an object store and does not conserve Linux file permissions – so protect them inside the tarball.). Copying to/from S3 is fast.  The postinstall script can do additional useful things, like downloading today’s meteorological observations to initialize your forecast.
@@ -14,7 +22,8 @@ Brave soul, one day you may have to start from scratch, install some compilers o
 -	You can save everything inside a virtual machine image (we call that an “AMI”) that you’ll use for the nodes of your next cluster.  This is a more advanced option and less recommended because you now become responsible for patching the OS, updating drivers, etc.  It’s much easier to always use the latest AMI provided by default by the AWS ParallelCluster service.  But if you have to (for example, because regulations require you to harden your machine images) then we can show you how.
 -	Any other ideas?
 
-Task:  
+## Task:  
+___
 Now that you’ve thought about this, go take a look at the postinstall script for this exercise and try to get a sense of what it does.   In Cloud9 do the following:
 
 ```bash

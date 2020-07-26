@@ -18,7 +18,7 @@ You will follow this guide if running this workshop on your own or if this the o
 
 1. Use the AWS Console search bar by clicking on **Services** on the top banner to locate **Cloud9** and use the **search field** to find it.
 ![Cloud 9](/images/introductory-steps/cloud9-find.png)
-2. Click on **Create Environment**
+2. Click on  **Create Environment**
 3. Name your environment with **MyDevEnv** and click **Next Step**
 ![Cloud 9](/images/introductory-steps/cloud9-name.png)
 4. Use the default settings on the *Configure Settings* page unless told otherwise and click **Next Step**

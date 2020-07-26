@@ -6,18 +6,22 @@ pre: "<b>IV ⁃ </b>"
 tags: ["WRF", "Overview"]
 ---
 
-So, we took our first steps in the hpcworkshops.com lab.  You started
-your first cluster (using the ParallelCluster tool inside the Cloud9
-environment), and we got the “hello world” bit out of the way.  Now we
-will teach you some additional skills to get you ready for “real work”
-such as running a weather forecast on an AWS cluster.
+You have now started your first cluster (using the ParallelCluster
+tool inside the Cloud9 environment), and we got the “hello world” bit
+out of the way.  Now we will teach you some additional skills to get
+you ready for “real work” such as running a weather forecast on an AWS
+cluster.
 
 In the first step we’re going to think about
+
 -  How can I bring my HPC application (e.g. a weather code) onto the cluster?  How can I bring in data?  We will work with “postinstall scripts” and “disk snapshots” and we’ll list a few other ways to consider for your own work.
+
 -  How do I make the cluster automatically adjust its size to the amount of work I give it?  We will use “autoscaling” to vary the number of compute nodes when there are tasks in the queue.
 
 In the second step we will worry about additional issues:
+
 -  How do I test the performance of my HPC job on AWS?  We will do a quick scaling study as an example.
+
 -  How much does my HPC job cost on AWS?
 
 In day-to-day application, it is possible to create many clusters

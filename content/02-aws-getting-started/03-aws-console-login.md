@@ -6,7 +6,14 @@ weight = 50
 tags = ["tutorial", "aws console", "ec2"]
 +++
 
-Depending on conditions in which you are running this guide, you may access the AWS Console through direct sign-in ([here](https://signin.aws.amazon.com/console)) or as directed by your trainer. To log in you will need to enter your AWS Account ID or alias, IAM user name, and Password that as provided to you for this lab.
+If you are taking this workshop virtually at PEARC, you will get
+instructions for how to access your temporary account. 
+
+However, if you are taking this workshop after the conference, you may
+access the AWS Console through direct sign-in
+([here](https://signin.aws.amazon.com/console)) or as directed by your
+trainer. To log in you will need to enter your AWS Account ID or
+alias, IAM user name, and Password.
 
 ![AWS Management Console](/images/hpc-aws-parallelcluster-workshop/login.png)
 

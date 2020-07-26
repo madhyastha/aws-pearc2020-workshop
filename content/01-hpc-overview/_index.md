@@ -26,4 +26,6 @@ After an optional introduction and setup stage, we will walk you through the fol
 
 - Running WRF describes how to run a tightly coupled weather prediction model. 
 
+- Containerized workflow best practices, and Nextflow
+
 We recommend you take these labs in the order presented as some dependencies exist between them.

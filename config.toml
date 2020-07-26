@@ -5,7 +5,7 @@ theme = "hugo-learn-hpc"
 uglyurls = true
 sectionPagesMenu = "main"
 pygmentsCodeFences = true
-googleAnalytics = "UA-148357634-1"
+googleAnalytics = "UA-100198268-2"
 
 
 [blackfriday]
@@ -60,12 +60,12 @@ url = "/authors.html"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-envelope'></i> Feedback / Questions?"
-url = "mailto:aws-hpc-workshop@amazon.com"
+name = "<i class='fas fa-bookmark'></i> Feedback"
+url = "https://survey.immersionday.com/Rs8ggvVGR"
 weight = 30
 
-
 [[menu.shortcuts]]
-name = "<i class='fas fa-tags'></i> Tags"
-url = "/tags"
+name = "<i class='fas fa-bookmark'></i> Contact Us"
+url="https://pages.awscloud.com/PEARC20Contact.html"
 weight = 40
+

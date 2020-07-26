@@ -5,10 +5,10 @@ weight = 50
 tags = ["tutorial", "initialize", "ParallelCluster"]
 +++
 
-Now that AWS ParallelCluster is installed and a default configuration has been created, you will create a configuration file to build a simple HPC system. This file will be generated in your home directory.
+Now that AWS ParallelCluster is installed, you will create a configuration file to build a simple HPC system. This file will be generated in your home directory.
 
 {{% notice info %}}
-Please double check you are using the correct key-pair
+Please double check you are using the correct key-pair.
 {{% /notice %}}
 
 #### Configuring Your HPC cluster
@@ -48,6 +48,7 @@ sanity_check = true
 
 [cluster default]
 key_name = lab-3-your-key
+base_os = alinux2
 vpc_settings = public
 ebs_settings = myebs
 compute_instance_type = c4.xlarge

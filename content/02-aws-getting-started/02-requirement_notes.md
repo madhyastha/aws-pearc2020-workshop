@@ -12,8 +12,8 @@ The following requirements will be necessary to follow this guide.
 - An Internet browser such as Chrome, Firefox, Safari, Opera or Edge.
 - Familiarity with common Linux commands.
 
-Should you have any question when running this workshop as a group or on your own, do not hesitate to talk to you coordinator or contact us at [AWS HPC](https://aws.amazon.com/hpc/)
+Should you have any question when running this workshop as a group or on your own, do not hesitate to ask a question in the forum or to contact us at [AWS HPC](https://aws.amazon.com/hpc/) or [AWS Research and Technical Computing](https://aws.amazon.com/government-education/research-and-technical-computing).
 
-Please take note that this tutorial will contain some codes to run a terminal that you can copy using the button mentioned below.
+Please note that this tutorial will contain some commands to run a terminal that you can copy using the button mentioned below.
 
 ![Copy Paste](/images/introductory-steps/copy-paste.png)

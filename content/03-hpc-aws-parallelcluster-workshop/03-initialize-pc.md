@@ -6,11 +6,13 @@ tags = ["tutorial", "initialize", "ParallelCluster"]
 +++
 
 
-Next, you will configure AWS ParallelCluster.
+To configure AWS ParallelCluster, you would normally use the command
+[**pcluster
+configure**](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting-started-configuring-parallelcluster.html)
+in a terminal and provide the requested information such as the AWS
+Region, Scheduler and EC2 Instance Type. This would create for you a file called `~/.parallelcluster/config` with default cluster settings. **However, today we will cut right to the chase by creating a specific configuation file to include HPC specific options.**
 
-To configure AWS ParallelCluster, you could use the command [**pcluster configure**](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting-started-configuring-parallelcluster.html) in a terminal and provide the requested information such as the AWS Region, Scheduler and EC2 Instance Type. **However, today we will take a shortcut by creating a basic configuration file, then customizing this file to include HPC specific options.**
-
-The commands below generate a new keypair, query the EC2 metadata to get the Subnet ID, VPC ID, and lastly write a config to `~/.parallelcluster/config`. You can always edit this config file to add and change [configuration options](https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration.html).
+The commands below generate a new keypair and query the EC2 metadata to get the Subnet ID and VPC ID. We will use these variables and set them again in scripts throughout the lab. 
 
 ```bash
 # generate a new key-pair if it doesn't already exist
@@ -21,33 +23,8 @@ IFACE=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces
 SUBNET_ID=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/${IFACE}/subnet-id)
 VPC_ID=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/${IFACE}/vpc-id)
 
-mkdir -p ~/.parallelcluster
-cat > ~/.parallelcluster/config << EOF
-[aws]
-aws_region_name = us-east-1
-
-[cluster default]
-key_name = lab-3-your-key
-vpc_settings = public
-
-[vpc public]
-vpc_id = ${VPC_ID}
-master_subnet_id = ${SUBNET_ID}
-
-[global]
-cluster_template = default
-update_check = false
-sanity_check = true
-
-[aliases]
-ssh = ssh {CFN_USER}@{MASTER_IP} {ARGS}
-EOF
 ```
 
-Now check the content of this file using:
-
-```bash
-cat ~/.parallelcluster/config
-```
-
-You now have a configuration file allowing you to create a simple cluster with the minimum required information. A default configuration file is good to have for testing purposes. Next, we build a configuration to generate an optimized cluster to run typical "tightly coupled" HPC applications.
+Now that we have set these variables, we build a 
+configuration to generate an optimized cluster to run typical "tightly
+coupled" HPC applications. 

@@ -8,7 +8,7 @@ tags = ["tutorial", "create", "ParallelCluster"]
 Once it’s ready, log into the new ParallelCluster:
 
 ```bash
-$ pcluster ssh mycluster -i ~/.ssh/lab-3-key
+pcluster ssh wrfcluster -i ~/.ssh/lab-3-key
 ```
 
 The EC2 instance asks for confirmation of the ssh login the first time you log onto the instance. Answer with “yes”. 

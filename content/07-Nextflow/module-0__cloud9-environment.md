@@ -5,9 +5,21 @@ weight = 30
 tags = ["tutorial", "configure", "initialize", "Nextflow"]
 +++
 
-AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
+AWS Cloud9 is a cloud-based integrated development environment (IDE)
+that lets you write, run, and debug your code with just a browser. It
+includes a code editor, debugger, and terminal. Cloud9 comes
+prepackaged with essential tools for popular programming languages,
+including JavaScript, Python, PHP, and more, so you don’t need to
+install files or configure your development machine to start new
+projects.
 
-We'll use Cloud9 in this workshop to ensure that all participants have the same development and execution environment.  It will also serve as a stand-in for a common "local" environment.
+We'll use Cloud9 in this workshop to ensure that all participants have
+the same development and execution environment.  It will also serve as
+a stand-in for a common "local" environment.
+
+If you are taking this workshop at PEARC 2020, note that we have
+pre-configured a special Cloud9 environment for you that is different
+from the one you have been using for HPC tutorials.
 
 ## Start your Cloud9 IDE
 

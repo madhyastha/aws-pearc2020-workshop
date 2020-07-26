@@ -1,5 +1,5 @@
 +++
-title = "d. Automation"
+title = "e. Automation"
 date = 2019-09-18T10:46:30-04:00 
 weight = 30 
 tags = ["tutorial", "configure", "initialize", "Nextflow"]

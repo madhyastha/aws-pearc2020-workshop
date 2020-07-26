@@ -13,7 +13,7 @@ There are a several ways to run Nextflow:
 
 ![ways to run nextflow](/images/nextflow/running-nextflow.png)
 
-## Local master and jobs
+## Local master process and jobs
 
 You can run Nextflow workflows entire on a single compute instance.  This can either be your local laptop, or a remote server like an EC2 instance.  In this workshop, your AWS Cloud9 Environment simulates this scenario.
 
@@ -27,10 +27,15 @@ nextflow run hello
 
 This will run Nextflow's built-in "hello world" workflow.
 
-## Local master and AWS Batch jobs
+## Local master process and AWS Batch jobs
 
-Genomics and life sciences workflows typically use a variety of tools that each have distinct computing resource requirements, such as high CPU or RAM utilization, or GPU acceleration.
-Sometimes these requirements are beyond what a laptop or a single EC2 instance can provide.  Plus, provisioning a single large instance so that a couple of steps in a workflow can run would be a waste of computing resources.
+Genomics and life sciences workflows typically use a variety of tools
+that each have distinct computing resource requirements, such as high
+CPU or RAM utilization, or GPU acceleration.  Sometimes these
+requirements are beyond what a laptop or a single EC2 instance can
+provide.  Plus, provisioning a single large instance so that a couple
+of steps in a workflow can run would be a waste of computing
+resources.
 
 A more cost effective method is to provision compute resources dynamically, as they are needed for each step of the workflow.
 This is what AWS Batch is good at doing.
@@ -109,11 +114,11 @@ which indicates that workflow processes were run remotely as AWS Batch Jobs and 
 
 Try running some of Nextflow's other demo pipelines:
 
-### rnatoy
+### rnaseq
 
 ```bash
 cd ~/environment/dedicated
-nextflow run rnatoy
+nextflow run rnaseq-nf
 ```
 
 ### blast-example

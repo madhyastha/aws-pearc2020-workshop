@@ -1,7 +1,7 @@
 +++
 title = "a. Create an autoscaling cluster wtih preloaded HPC applications."
-date = 2019-09-18T10:46:30-04:00
-weight = 30
+date = 2019-09-18T10:46:30-04:00 
+weight = 30 
 tags = ["tutorial", "configure", "initialize", "ParallelCluster"]
 +++
 
@@ -18,8 +18,8 @@ We’re going to run the WRF model today – the most widely used code for weath
 
 
 {{% notice tip %}}
-Your current cluster config is this one:
-https://www.hpcworkshops.com/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html 
+Your current cluster config is listed here:
+https://aws-pearc2020.org/03-hpc-aws-parallelcluster-workshop/04-configure-pc.html 
 And you’re going to want to have the documentation at hand for a list of all available options:
 https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration.html 
 Not all options are interesting, but try to look up one or two that you’re curious about.
@@ -45,20 +45,28 @@ to start over, you’ll lose 10-15 min. of time.) You’ll notice there’s one 
 your config file, too.
 
 ```bash
+cd ~/environment
+IFACE=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/)
+SUBNET_ID=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/${IFACE}/subnet-id)
+VPC_ID=$(curl --silent http://169.254.169.254/latest/meta-data/network/interfaces/macs/${IFACE}/vpc-id)
+AZ=$(curl http://169.254.169.254/latest/meta-data/placement/availability-zone)
+REGION=${AZ::-1}
+
+cat > my-wrf-config.conf << EOF
 [global]
 update_check = true
 sanity_check = true
 cluster_template = default
-
 [aws]
-aws_region_name = us-west-2
+
+aws_region_name = ${REGION}
 
 [cluster default]
 vpc_settings = public
 base_os = alinux2
 ebs_settings = myebs
 scheduler = sge
-key_name = <your-key>
+key_name = lab-3-your-key
 #compute_instance_type = c5.xlarge
 compute_instance_type = c5.4xlarge
 master_instance_type = c5.xlarge
@@ -73,30 +81,27 @@ s3_read_write_resource = *
 dcv_settings = lab-dcv
 
 [vpc public]
-master_subnet_id = subnet-XXXXXX
-vpc_id = vpc-XXXXXX  
+vpc_id = ${VPC_ID}
+master_subnet_id = ${SUBNET_ID}
 
 [ebs myebs]
 volume_type = gp2
 volume_size = 400
-ebs_snapshot_id = snap-09b113b79d6a3d2b5
+ebs_snapshot_id = snap-07a0ceae2171a4c98
 
 [dcv lab-dcv]
 enable = master
 
 [aliases]
 ssh = ssh {CFN_USER}@{MASTER_IP} {ARGS}
+EOF
+
 ```
 
-Pick a cluster name for your cluster (in the command below we call it mycluster) and endow it with the breath of life: 
+Now choose a name (here we call it wrfcluster) and endow your cluster with the breath of life: 
 
 ```bash
-$ pcluster create mycluster -c my-cluster-config.conf
-```
-
-When the cluster is complete, you can log in and inspect the results:
-```bash
-$ pcluster ssh mycluster -i ~/.ssh/lab-3-key
+$ pcluster create wrfcluster -c my-wrf-config.conf
 ```
 
 As before you’ll have to wait 5-10 minutes.  Let’s put that time to

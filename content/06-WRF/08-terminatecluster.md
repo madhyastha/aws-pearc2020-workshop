@@ -15,11 +15,18 @@ pcluster list
 Delete the ParallelCluster:
 
 ```bash
-pcluster delete mycluster
+pcluster delete wrfcluster
 ```
 
 Clusters take several minutes to delete.
 
-You still have a Cloud9 instance running.  And probably some files stored in S3.  Will these continue to cost you money if you don’t delete them?
+You still have a Cloud9 instance running.  And probably some files
+stored in S3.  Will these continue to cost you money if you don’t
+delete them? 
+
+If you are taking this workshop at PEARC we have given you a temporary
+account and everything will be deleted. However, if you are doing this
+workshop on your own you will probably want to clean up your Cloud9
+instance and delete the storage in S3 that you do not need.
 
 
