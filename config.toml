@@ -56,7 +56,7 @@ weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Authors"
-url = "/authors.html"
+url = "https://www.aws-pearc2020.org/authors.html"
 weight = 20
 
 [[menu.shortcuts]]
